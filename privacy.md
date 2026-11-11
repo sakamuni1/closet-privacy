@@ -1,70 +1,68 @@
-# Privacy Policy for Closet
+# BooKlip Privacy Policy
 
-**Last updated:** February 2025
+**Last updated: November 11, 2026**
 
-Closet is a macOS clipboard and snippet manager. This policy describes how the app handles your information.
+BooKlip is a macOS app for collecting and organizing clipboard items and other content. This policy explains what information the app processes, where it is stored, and when it may be shared with other services.
 
----
+## Information BooKlip Processes
 
-## 1. Information We Collect
+Depending on the features you use and the permissions you grant, BooKlip may process:
 
-When you use Closet, we may process the following on your device:
+- **Clipboard content:** Text, links, images, and other content when clipboard monitoring is enabled, or when you use a paste or import action in the app.
+- **Downloads folder information:** The app checks the Downloads folder for new files and may add file entries to the current tab. This can involve file names, paths, sizes, and modification dates.
+- **Voice memo recordings and transcripts:** Audio captured when you start a voice memo, and its transcript when speech recognition is used.
+- **App preferences and organization data:** Settings, tabs, item labels, and related information needed to operate the app.
+- **Deleted-item recovery data:** Local copies retained to support restoring items you deleted in the app.
 
-- **Clipboard content** — Text, images, and file references you copy.
-- **File metadata** — Information about files (e.g. from your Downloads folder) when you add them to Closet.
-- **Voice memos** — Audio you record using the in-app voice memo feature (if enabled).
-- **App data** — Your tabs, item list, preferences, and settings (e.g. window position, sort order).
+## How Information Is Used
 
-This data is processed locally on your Mac. We do not send it to our own servers.
+BooKlip uses this information to capture and organize items, show previews, search your collection, restore deleted items, and provide voice memo features. BooKlip does not operate a remote service that stores your clipboard history.
 
----
+## Storage and Services
 
-## 2. How We Use Your Information
+### Storage on your Mac
 
-We use the data above only to:
+App data is stored in BooKlip’s local data folders on your Mac. Certain sensitive text is encrypted before local storage, but this does not mean that every item or file handled by the app is encrypted. Anyone with access to your macOS account or files may be able to access locally stored information.
 
-- Provide clipboard history and snippet management.
-- Let you organize items in tabs and search/filter them.
-- Support voice memo recording and playback (when you enable it).
-- Optionally monitor your Downloads folder so you can add new files to Closet quickly.
-- Remember your preferences and improve how the app works for you.
+### Speech recognition
 
----
+Voice transcription uses Apple’s Speech framework. Depending on the recognizer, language, and system configuration, audio may be sent to Apple for processing. Apple’s handling of that audio is subject to Apple’s terms and privacy practices. See Apple’s documentation on [requesting permission for speech recognition](https://developer.apple.com/documentation/speech/asking-permission-to-use-speech-recognition) and [on-device recognition](https://developer.apple.com/documentation/speech/sfspeechrecognitionrequest/requiresondevicerecognition).
 
-## 3. Data Storage and Sync
+### Link icons
 
-- **Local storage** — Your clips, tabs, and settings are stored on your Mac. By default, nothing is sent to the internet.
-- **Dropbox (optional)** — If you turn on “Dropbox Sync” in Settings, we store a single backup file (`All_Close_data.json`) in a folder named **Closet** in your Dropbox. That file contains your tabs and item metadata so you can restore or sync your data. Dropbox is governed by [Dropbox’s Privacy Policy](https://www.dropbox.com/privacy). We do not read or modify any other files in your Dropbox.
-- **No third‑party analytics or tracking** — We do not use analytics, advertising, or tracking SDKs that send your data to other companies.
+To display a website icon for a link, BooKlip may request a favicon from the website or from Google’s favicon service. Those requests can reveal the website domain to the service receiving the request. This applies to the icon lookup, not to the clipboard history as a whole.
 
----
+### Local network sharing
 
-## 4. Your Rights and Choices
+If you choose to use the sharing feature, BooKlip starts a web server on your local network and provides a link for selected items. People who can reach that address may be able to view the shared items while the sharing server is running. The connection uses HTTP and is not encrypted in transit. Share links only with people you trust and on networks you trust. BooKlip does not use a cloud relay for this feature.
 
-You can:
+### Purchases
 
-- Turn **clipboard monitoring** and **download monitoring** on or off in Settings.
-- Delete individual items or clear all items at any time.
-- Export your data for backup (e.g. from Data Management settings).
-- Disable Dropbox Sync to stop storing the backup file in your Dropbox.
-- Uninstall the app to remove locally stored data (you may also delete the Closet folder from Dropbox if you use sync).
+In-app purchases are handled by Apple through StoreKit. Apple processes transaction information under its own terms and privacy policy.
 
----
+BooKlip does not include advertising or analytics SDKs.
 
-## 5. Data Security
+## Your Choices
 
-- Data is stored on your Mac and (if you enable it) in your own Dropbox account.
-- We do not collect or store your data on our servers.
-- Use a secure Mac user account and keep your Dropbox account secure to protect your data.
+- You can control clipboard monitoring in the app’s privacy settings and use manual paste or import actions instead.
+- Voice memo recording begins only when you start the feature. macOS may ask separately for microphone and speech-recognition permission.
+- You can delete items and use the app’s data-management controls to clear app data or manage deleted-item recovery.
+- You can stop local network sharing by stopping the sharing feature or quitting the app.
 
----
+The app monitors the Downloads folder for new files and may add entries to the current tab. Items added this way refer to files in your Downloads folder; deleting an entry from BooKlip does not necessarily delete the original file.
 
-## 6. Changes to This Policy
+## Retention and Deletion
 
-We may update this privacy policy from time to time. The “Last updated” date at the top will be revised when we do. Continued use of Closet after changes means you accept the updated policy.
+Information remains in BooKlip’s local storage until you delete it or clear the app’s data. BooKlip may keep local recovery copies of deleted items so that you can restore them; the app limits the number of these copies and removes older recovery data as needed. Deleting an item from BooKlip does not necessarily remove an original file stored elsewhere on your Mac.
 
----
+## Security
 
-## 7. Contact
+BooKlip uses local storage and encrypts certain sensitive text, but no method of storage or transmission is completely secure. The local network sharing feature uses unencrypted HTTP, as described above. Keep your Mac and account protected, and use care when sharing links.
 
-If you have questions about this privacy policy or Closet’s handling of your data, please open an issue in the app’s repository or contact the developer through the channel provided in the app or on GitHub.
+## Changes to This Policy
+
+This policy may be updated when BooKlip’s features or data practices change. The date at the top of this document indicates when it was last revised.
+
+## Contact
+
+For questions about this policy or BooKlip’s privacy practices, contact the developer through the project’s support channel or issue tracker.
