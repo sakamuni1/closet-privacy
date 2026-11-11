@@ -32,9 +32,9 @@ Voice transcription uses Apple’s Speech framework. Depending on the recognizer
 
 To display a website icon for a link, BooKlip may request a favicon from the website or from Google’s favicon service. Those requests can reveal the website domain to the service receiving the request. This applies to the icon lookup, not to the clipboard history as a whole.
 
-### Local network sharing
+### AirDrop
 
-If you choose to use the sharing feature, BooKlip starts a web server on your local network and provides a link for selected items. People who can reach that address may be able to view the shared items while the sharing server is running. The connection uses HTTP and is not encrypted in transit. Share links only with people you trust and on networks you trust. BooKlip does not use a cloud relay for this feature.
+When you choose AirDrop in BooKlip, the app passes the selected files to Apple’s system AirDrop sharing service. The transfer is handled by Apple’s operating system and is subject to Apple’s privacy practices. BooKlip does not operate a separate network sharing service for this action.
 
 ### Purchases
 
@@ -47,7 +47,7 @@ BooKlip does not include advertising or analytics SDKs.
 - You can control clipboard monitoring in the app’s privacy settings and use manual paste or import actions instead.
 - Voice memo recording begins only when you start the feature. macOS may ask separately for microphone and speech-recognition permission.
 - You can delete items and use the app’s data-management controls to clear app data or manage deleted-item recovery.
-- You can stop local network sharing by stopping the sharing feature or quitting the app.
+- You choose which files to send through AirDrop, and macOS presents the system’s sharing interface.
 
 The app monitors the Downloads folder for new files and may add entries to the current tab. Items added this way refer to files in your Downloads folder; deleting an entry from BooKlip does not necessarily delete the original file.
 
@@ -57,7 +57,7 @@ Information remains in BooKlip’s local storage until you delete it or clear th
 
 ## Security
 
-BooKlip uses local storage and encrypts certain sensitive text, but no method of storage or transmission is completely secure. The local network sharing feature uses unencrypted HTTP, as described above. Keep your Mac and account protected, and use care when sharing links.
+BooKlip uses local storage and encrypts certain sensitive text, but no method of storage or transmission is completely secure. AirDrop transfers are handled by Apple’s operating system. Keep your Mac and account protected, and review the files you choose to share.
 
 ## Changes to This Policy
 
